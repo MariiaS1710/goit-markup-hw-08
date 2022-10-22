@@ -1,0 +1,87 @@
+.clients-section {
+    padding: 94px 0;
+}
+.clients-list {
+    display: flex;
+}
+.clients-item {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+
+.company-ya-co {
+    width: 41px;
+    height: 47px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-clients {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+
+    &:hover .company-ya-co,
+    &:focus .company-ya-co,
+    &:hover .company-comp,
+    &:focus .company-comp,
+    &:hover .company-company2,
+    &:focus .company-company2,
+    &:hover .company-peters,
+    &:focus .company-peters,
+    &:hover .company-brand,
+    &:focus .company-brand,
+    &:hover .company-comp3,
+    &:focus .company-comp3 {
+        fill: var(--accent-color);
+    }
+}
+
+.company-comp {
+    width: 40px;
+    height: 52px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.company-company2 {
+    width: 44px;
+    height: 41px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-peters {
+    width: 85px;
+    height: 40px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-brand {
+    width: 62px;
+    height: 45px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-comp3 {
+    width: 93px;
+    height: 43px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+

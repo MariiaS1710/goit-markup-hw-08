@@ -1,0 +1,19 @@
+.link.current-port {
+    color: var(--accent-color);
+    position: relative;
+}
+
+.link.current-port::after {
+    content: "";
+    position: absolute;
+    top: 276%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 78px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
+.header-portfolio{
+    border-bottom: 1px solid #ececec;
+}

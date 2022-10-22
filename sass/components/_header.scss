@@ -1,0 +1,77 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 24px 15px 25px;
+     }
+.logo {
+    @include font(700, 26px, 1.19, 0.03em);
+
+    display: block;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    margin-right: 94px;
+    color: var(--black-color);
+}
+.logo-part {
+    color: var(--accent-color);
+}
+.header-list {
+    display: flex;
+}
+.header-list__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.link {
+    @include font(500, 14px, 1.14, 0.02em);
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    transition: var(--transition-hover-focus);
+    color: var(--primary-text-color);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+&.current::after {
+    content: "";
+    position: absolute;
+    top: 276%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
+
+&.current {
+    color: var(--accent-color);
+    position: relative;
+}
+}
+
+.contact-wrap {
+    margin-left: auto;
+}
+.phone {
+    margin-left: 50px;
+}
+
+.heder-list__icon {
+    margin-right: 10px;
+    fill: #757575;
+    transition: var(--transition-hover-focus);
+}
+
+
+.header-list__link {
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    
+    &:hover .heder-list__icon,
+    &:focus .heder-list__icon {
+        fill: var(--accent-color);
+    }
+}
