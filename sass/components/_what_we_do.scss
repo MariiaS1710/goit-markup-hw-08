@@ -1,21 +1,32 @@
 .what-we-do-section {
+    display: none;
+    @media screen  and (min-width:1200px){
+    display: contents;
     padding-bottom: 94px;
     z-index: 0;
+    }
+    
 }
 
 .main-title {
-    @include font (700, 36px, 1.16, 0.03em);
+    @include font (700, 28px, 1.16, 0.03em);
     
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width:1200px){
+        @include font (700, 36px, 1.16, 0.03em);
+        margin-bottom: 50px;
+    }
+    
+
 }
 
 .what-we-do-list {
     display: flex;
-}
+   }
 
 .what-we-do-items {
-    // width: calc((100%-60px)/3);
+    width: calc((100% - 60px) / 3);
     position: relative;
 &:not(:first-child) {
         margin-left: 30px;

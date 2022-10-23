@@ -33,12 +33,45 @@
 }
 
 .footer-container {
-    display: flex;
+    
     align-items: baseline;
+
+    @media screen and (min-width:768px) {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        
+    }
 }
 
 .footer-adress {
-    margin-right: 70px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and(min-width:768px) {
+        margin: 0;
+        margin-right: 165px;
+        margin-bottom: 60px;
+    }
+    @media screen and(min-width:1200px){
+        text-align: start;
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
+
+}
+.footer-social-wrap{
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and(min-width:1200px){
+        text-align: start;
+        margin-bottom: 0;
+    }
 }
 
 .footer-social {
@@ -47,10 +80,15 @@
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
-}
+    text-align: center;
 
+    @media screen and(min-width:1200px) {
+    text-align: start;
+}
+}
 .list-social {
     display: flex;
+    justify-content: center;
 }
 
 .social-item {
@@ -84,15 +122,24 @@
 }
 
 .footer-form {
-    margin-left: auto;
-    width: 570px;
-    height: 86px;
+    margin: 0 auto;
+    width: 450px;
+    height: 156px;
+    @media screen and(min-width:1200px){
+        width: 570px;
+        height: 86px;
+        margin-left: 93px;
+    }
+    
 }
 
 .form-wrap {
-    display: flex;
+    @media screen and(min-width:1200px){
+        display: flex;
+    }
+    
   & input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: var(--hero-footer-color);
     outline: none;
@@ -103,6 +150,13 @@
     margin-right: 15px;
     padding: 16px;
     color: var(--primary-white-color);
+    margin-bottom: 20px;
+
+    @media screen and(min-width:1200px){
+        width: 358px;
+        height: 50px;
+    }
+   
 }
 &::placeholder {
     @include font(400, 16px, 1.25, 0.03em);
@@ -125,3 +179,4 @@
     height: 24px;
     margin-left: 10px;
 }
+
