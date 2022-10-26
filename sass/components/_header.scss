@@ -20,6 +20,9 @@
 .logo-part {
     color: var(--accent-color);
 }
+.site-nav{
+    display: none;
+}
 .header-list {
     display: flex;
 }
@@ -57,7 +60,9 @@
 }
 
 .contact-wrap {
+    display: none;
     margin-left: auto;
+
 }
 .phone {
     margin-left: 50px;

@@ -101,6 +101,10 @@ ul {
   color: var(--accent-color);
 }
 
+.site-nav {
+  display: none;
+}
+
 .header-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,6 +147,7 @@ ul {
 }
 
 .contact-wrap {
+  display: none;
   margin-left: auto;
 }
 
@@ -171,8 +176,8 @@ ul {
 }
 
 .overlay {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero.jpg);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-img-mob-1x.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-mob-1x.jpg);
   padding-top: 118px;
   padding-bottom: 118px;
   background-size: cover;
@@ -184,10 +189,36 @@ ul {
   margin-right: auto;
   background-color: rgba(47, 48, 58, 0.4);
 }
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay .overlay {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-img-mob-2x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-img-tab-1x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-tab-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-img-tab-2x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-tab-2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .overlay {
     padding-top: 200px;
     padding-bottom: 200px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-img-desk-1x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-desk-1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-img-desk-2x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-desk-2x.jpg);
   }
 }
 
@@ -458,16 +489,6 @@ img {
 .our-team-img {
   display: block;
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .our-team-img {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .our-team-img {
-    width: 270px;
-  }
 }
 
 .our-team-item {
@@ -946,7 +967,7 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -1178,6 +1199,21 @@ textarea:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+.mob-menu-btn {
+  border: none;
+  background-color: var(--primary-white-color);
+}
+
+.mob-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-white-color);
+  width: 100vw;
+  height: 100hv;
+  z-index: 999;
 }
 
 .link.current-port {

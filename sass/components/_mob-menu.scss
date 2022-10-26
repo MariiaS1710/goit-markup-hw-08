@@ -1,0 +1,15 @@
+.mob-menu-btn{
+    border: none;
+    background-color: var(--primary-white-color);
+}
+
+.mob-menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-white-color);
+    width: 100vw;
+    height: 100hv;
+    z-index: 999;
+}
+
