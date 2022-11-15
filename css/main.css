@@ -1311,6 +1311,18 @@ textarea:focus {
   color: var(--secondary-text-color);
 }
 
+.mob-menu-wrap {
+  margin-bottom: 64px;
+}
+
+.mob-menu-socialwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 356px;
+  height: 22px;
+}
+
 .link.current-port {
   color: var(--accent-color);
   position: relative;
