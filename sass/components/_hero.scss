@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1600px;
-    min-height: 600px;
+    max-height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(47, 48, 58, 0.4);
@@ -24,7 +24,7 @@
         background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-tab-1x.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        // background-position: center;
     }
     
     @media screen and (min-device-pixel-ratio: 2),
@@ -37,9 +37,11 @@
 }
 @media screen and (min-width:1200px) {
     .overlay{
+    max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-desk-1x.jpg);
+    background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
