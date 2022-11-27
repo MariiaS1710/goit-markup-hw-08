@@ -8,6 +8,10 @@
     color: var(--primary-white-color);
     display: block;
     margin-bottom: 20px;
+    @media screen and(max-width:1199px){
+        margin: 0 auto;
+        margin-bottom: 28px;
+    }
 }
 
 .footer-list-item:not(:last-child) {
@@ -158,7 +162,7 @@
             
     //     }
 
-    @media screen and(min-width:1199px){
+    @media screen and(min-width:1200px){
         max-width:358px;
         height: 50px;
         margin-right: 12px;
@@ -178,6 +182,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--accent-color);
+    border: solid var(--accent-color);
+    border-radius: 4px;
+    color: var(--primary-white-color);
+    @media screen and(max-width:1199px){
+        margin: 0 auto;
+    }
 }
 }
 .icon-form {

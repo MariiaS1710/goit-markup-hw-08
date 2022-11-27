@@ -15,15 +15,14 @@
         display: flex;
         flex-wrap: nowrap;
         }
-    &__item:not(:first-child) {
-        @media screen and(min-width:1200px){
-            margin-left: 30px;
-        }
-    }
-    &__item:not(:last-child) {
+    
+    
+&__item:not(:last-child) {
+        @media screen and(max-width:767px){
                 margin-bottom: 30px;
+            }
         }
-    &__wrap{
+&__wrap{
         
         @media screen and (min-width:768px) {
             width: 354px;
@@ -68,7 +67,7 @@
         letter-spacing: 0.03em;
         color: var(--secondary-text-color);
 }
-    }
+}
 
 .icon-antenna::before {
     background-image: url(../img/antenna.svg);

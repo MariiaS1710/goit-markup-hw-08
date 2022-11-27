@@ -1,5 +1,6 @@
 .what-we-do-section {
     display: none;
+    
     @media screen  and (min-width:1200px){
     display: contents;
     padding-bottom: 94px;
@@ -23,6 +24,7 @@
 
 .what-we-do-list {
     display: flex;
+    padding-bottom: 94px;
    }
 
 .what-we-do-items {
